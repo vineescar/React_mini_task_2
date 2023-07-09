@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+ /* justify-content: center;
+  align-items: center; */
+  /* height: 100vh;  */
+  width: 100%; 
+  /* max-width: 9000px;  */
+  border: 1px solid rgb(6, 6, 32); 
+  margin: auto;
+}
+
+
+header {
+  width: 100%;
+  padding: 0 0.29em;
+  background-color: rgb(138, 148, 137);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  flex-direction: column;
+  flex-grow: 1;
+  
+
+
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: left;
+  align-items: left;
+  overflow-y: auto;
+  min-height: 510px;
+}
+
+footer {
+  width: 100%;
+  padding: 0.25em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+}
+
+
+/* button {
+  height: 48px;
+  width: 150px;
+  border-radius: 0.25rem;
+   padding: 0.1rem; 
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: rgb(7, 7, 14);
+  cursor: pointer;
+  margin: 0.25rem;
+  
+} */
+ 
+/* button:hover {
+  color: white;
+  background-color: rgb(4, 17, 4);
+  outline: none;
+} */
+
+
+ul li {
+  margin-bottom: 20px; 
+  list-style-type: disc;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  
+  padding: 10px 20px;
+  flex-grow: 1;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: rgb(7, 7, 14);
+  cursor: pointer;
+  margin: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .button-container {
+    /* flex-direction: column; */
+    align-items: stretch;
+  }
+  
+  .button {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
